@@ -1,0 +1,18 @@
+[package]
+name = "esp_idf"
+version = "0.1.0"
+authors = ["jeikabu <jeikabu@users.noreply.github.com>"]
+edition = "2018"
+
+description = "High-level wrapper for ESP-IDF"
+license = "MIT"
+homepage = "https://github.com/jeikabu/esp_idf/"
+repository = "https://github.com/jeikabu/esp_idf/"
+keywords = ["esp-idf", "esp32"]
+categories = ["embedded", "no-std"]
+#readme = "README.md"
+
+[dependencies]
+cty = "0.2"
+esp-idf-sys = {version = "0.1", path = "../esp-idf-sys/esp-idf-sys" }
+failure = {version = "0.1.7", default-features = false, features = ["derive"]}
