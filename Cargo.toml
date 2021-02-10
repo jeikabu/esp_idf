@@ -1,6 +1,6 @@
 [package]
 name = "esp_idf"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["jeikabu <jeikabu@users.noreply.github.com>"]
 edition = "2018"
 
@@ -14,5 +14,8 @@ categories = ["embedded", "no-std"]
 
 [dependencies]
 cty = "0.2"
-esp-idf-sys = {version = "0.1", path = "../esp-idf-sys/esp-idf-sys" }
+esp-idf-sys = {version = "0.1", package = "esp_idf_dev_sys" }
 failure = {version = "0.1.7", default-features = false, features = ["derive"]}
+
+[package.metadata.docs.rs]
+default-target = "x86_64-unknown-linux-gnu"
